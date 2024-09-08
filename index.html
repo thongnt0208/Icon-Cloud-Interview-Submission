@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intern Questions</title>
+    <script src="https://unpkg.com/redux@4.2.1/dist/redux.js"></script>
+</head>
+<body>
+    <div id="app">
+        <button onclick="dispatch({ type: 'QUESTION_1' })">Question 1</button>
+        <button onclick="dispatch({ type: 'QUESTION_2' })">Question 2</button>
+        <button onclick="dispatch({ type: 'QUESTION_3' })">Question 3</button>
+        <button onclick="dispatch({ type: 'QUESTION_4' })">Question 4</button>
+        <button onclick="handleQuestion5Click()">Question 5</button>
+        <form id="timeForm" style="display: none;">
+            <input type="time" id="timeInput">
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
